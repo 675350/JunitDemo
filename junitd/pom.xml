@@ -21,7 +21,15 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jxr-plugin</artifactId>
+				 <executions><execution>
+                                 <id>run-myGroovy</id>
+                                 <goals><goal>execute</goal></goals>
+                                  <phase>verify</phase>
+                                  <configuration>
 			</plugin>
 		</plugins>
 		</reporting>
 </project>
+
+
+
